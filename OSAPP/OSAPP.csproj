@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B27F0EBE-0812-4005-9BA0-4BA28954152C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OSAPP</RootNamespace>
+    <AssemblyName>OSAPP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A_PROMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_PROMO.Designer.cs">
+      <DependentUpon>A_PROMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_CUSTOMERS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_CUSTOMERS.Designer.cs">
+      <DependentUpon>C_CUSTOMERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_PROMO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_PROMO.Designer.cs">
+      <DependentUpon>C_PROMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_APPOINTMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_APPOINTMENT.Designer.cs">
+      <DependentUpon>F_APPOINTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APPOINTMENTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APPOINTMENTS.Designer.cs">
+      <DependentUpon>APPOINTMENTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_BARBER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_BARBER.Designer.cs">
+      <DependentUpon>A_BARBER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_PRODUCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_PRODUCTS.Designer.cs">
+      <DependentUpon>A_PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_SERVICES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_SERVICES.Designer.cs">
+      <DependentUpon>A_SERVICES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_APPOINTMENT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_APPOINTMENT.Designer.cs">
+      <DependentUpon>C_APPOINTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_BARBERS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_BARBERS.Designer.cs">
+      <DependentUpon>C_BARBERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_CASHIER.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_CASHIER.Designer.cs">
+      <DependentUpon>C_CASHIER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_PRODUCTS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_PRODUCTS.Designer.cs">
+      <DependentUpon>C_PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_QUE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_QUE.Designer.cs">
+      <DependentUpon>C_QUE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_SALES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_SALES.Designer.cs">
+      <DependentUpon>C_SALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_SERVICES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_SERVICES.Designer.cs">
+      <DependentUpon>C_SERVICES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_USERS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_USERS.Designer.cs">
+      <DependentUpon>C_USERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D_ADMIN.Designer.cs">
+      <DependentUpon>D_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_MANAGER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D_MANAGER.Designer.cs">
+      <DependentUpon>D_MANAGER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_RECEPTIONIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D_RECEPTIONIST.Designer.cs">
+      <DependentUpon>D_RECEPTIONIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_USER.Designer.cs">
+      <DependentUpon>E_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORGOTPASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORGOTPASS.Designer.cs">
+      <DependentUpon>FORGOTPASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOADING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOADING.Designer.cs">
+      <DependentUpon>LOADING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ADMIN_REGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN_REGISTER.Designer.cs">
+      <DependentUpon>ADMIN_REGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_REGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_REGISTER.Designer.cs">
+      <DependentUpon>A_REGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_WALKIN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_WALKIN.Designer.cs">
+      <DependentUpon>C_WALKIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RatingForm.Designer.cs">
+      <DependentUpon>RatingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R_PRODUCT.Designer.cs">
+      <DependentUpon>R_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="U_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="U_PRODUCT.Designer.cs">
+      <DependentUpon>U_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="APPOINTMENTS.resx">
+      <DependentUpon>APPOINTMENTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_PROMO.resx">
+      <DependentUpon>A_PROMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_CUSTOMERS.resx">
+      <DependentUpon>C_CUSTOMERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_PROMO.resx">
+      <DependentUpon>C_PROMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_APPOINTMENT.resx">
+      <DependentUpon>F_APPOINTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_BARBER.resx">
+      <DependentUpon>A_BARBER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_PRODUCTS.resx">
+      <DependentUpon>A_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_SERVICES.resx">
+      <DependentUpon>A_SERVICES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_APPOINTMENT.resx">
+      <DependentUpon>C_APPOINTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_BARBERS.resx">
+      <DependentUpon>C_BARBERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_CASHIER.resx">
+      <DependentUpon>C_CASHIER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_PRODUCTS.resx">
+      <DependentUpon>C_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_QUE.resx">
+      <DependentUpon>C_QUE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_SALES.resx">
+      <DependentUpon>C_SALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_SERVICES.resx">
+      <DependentUpon>C_SERVICES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_USERS.resx">
+      <DependentUpon>C_USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_ADMIN.resx">
+      <DependentUpon>D_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_MANAGER.resx">
+      <DependentUpon>D_MANAGER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_RECEPTIONIST.resx">
+      <DependentUpon>D_RECEPTIONIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_USER.resx">
+      <DependentUpon>E_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORGOTPASS.resx">
+      <DependentUpon>FORGOTPASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOADING.resx">
+      <DependentUpon>LOADING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN_REGISTER.resx">
+      <DependentUpon>ADMIN_REGISTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_REGISTER.resx">
+      <DependentUpon>A_REGISTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_WALKIN.resx">
+      <DependentUpon>C_WALKIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RatingForm.resx">
+      <DependentUpon>RatingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_PRODUCT.resx">
+      <DependentUpon>R_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="U_PRODUCT.resx">
+      <DependentUpon>U_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllImage.png" />
+    <None Include="Resources\Logo.bmp" />
+    <None Include="Resources\433788159_2172361693129148_1312066916810485007_n.png" />
+    <None Include="Resources\filledstar.png" />
+    <None Include="Resources\unfilledstar.png" />
+    <None Include="Resources\FIRST_TIME_CUSTOMER_IMAGE.png" />
+    <None Include="Resources\ANNIVERSARY_IMAGE.png" />
+    <None Include="Resources\BIRTHDAY_IMAGE.png" />
+    <Content Include="SHOP.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SHOP_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>SHOP.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
