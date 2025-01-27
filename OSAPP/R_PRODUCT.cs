@@ -17,7 +17,7 @@ namespace OSAPP
         private Image ProductImage;
         private decimal ProductPrice;
         private DateTime ProductValidity;
-        public const string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\SOREN\\Documents\\OSAPP\\OSAPP\\SHOP.mdf;Integrated Security=True";
+        public const string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\JJ\\source\\repos\\EquinoxGneiss\\BBSQueue\\OSAPP\\SHOP.mdf;Integrated Security=True";
 
         public R_PRODUCT(string AFirstName, string ALastName, byte[] AProfilePictureData, string productName, Image productImage, decimal productPrice, DateTime productValidity)
         {

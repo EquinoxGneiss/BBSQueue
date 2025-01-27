@@ -17,7 +17,7 @@ namespace OSAPP
         private string AfirstName;
         private string AlastName;
         private byte[] AprofilePictureData;
-        public const string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\SOREN\\Documents\\OSAPP\\OSAPP\\SHOP.mdf;Integrated Security=True";
+        public const string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\JJ\\source\\repos\\EquinoxGneiss\\BBSQueue\\OSAPP\\SHOP.mdf;Integrated Security=True";
         public A_BARBER(string AfirstName, string AlastName, byte[] AprofilePictureData)
         {
             InitializeComponent();

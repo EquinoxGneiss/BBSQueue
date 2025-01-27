@@ -13,7 +13,7 @@ namespace OSAPP
 {
     public partial class FORGOTPASS : Form
     {
-        public const string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\SOREN\\Documents\\OSAPP\\OSAPP\\SHOP.mdf;Integrated Security=True"; public FORGOTPASS()
+        public const string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\JJ\\source\\repos\\EquinoxGneiss\\BBSQueue\\OSAPP\\SHOP.mdf;Integrated Security=True"; public FORGOTPASS()
         {
             InitializeComponent();
         }
